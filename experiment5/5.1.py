@@ -12,5 +12,5 @@ def add_line_number(filename):
             f.write(line.rstrip() + ' ' * (max_len - len(line) + 1) + '#' + str(i + 1) + '\n')
 
 
-filename = 'D:/Projects/PyCharmProject/classwork/experiment5/5.1'
+filename = '//experiment5/5.1'
 add_line_number(filename)

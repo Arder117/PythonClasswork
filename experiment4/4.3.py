@@ -15,5 +15,5 @@ def findAABB(filename):
                 print(tem)
 
 
-filename = 'D:/Projects/PyCharmProject/classwork/experiment4/test'
+filename = '//experiment4/test'
 findAABB(filename)
