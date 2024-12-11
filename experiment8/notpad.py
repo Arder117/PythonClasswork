@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 1800, 900)
         self.centralwidget = QtWidgets.QWidget(self)
         self.setCentralWidget(self.centralwidget)
-        self.setWindowIcon(QIcon('favicon.ico'))
+        # self.setWindowIcon(QIcon('favicon.ico'))
 
         self.openFileName = '无标题.txt'
         self.openFilePath = ''
