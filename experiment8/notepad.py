@@ -1,12 +1,12 @@
 import sys
 from PyQt5.QtGui import QFont, QTextDocument
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPlainTextEdit, QMenuBar, QMenu, QAction, QStatusBar, \
-    QFileDialog, QFontDialog, QMessageBox, QLineEdit, QDialog, QVBoxLayout, QPushButton, QRadioButton
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QPlainTextEdit, QMenuBar, QMenu, QAction, QStatusBar,
+                             QFileDialog, QFontDialog, QMessageBox, QLineEdit, QDialog, QVBoxLayout, QPushButton,
+                             QRadioButton)
 
 
 class Notepad(QMainWindow):
 
-    # 初始化
     def __init__(self):
         super().__init__()
 
@@ -324,6 +324,7 @@ class Notepad(QMainWindow):
         line = cursor.blockNumber() + 1
         column = cursor.columnNumber() + 1
         self.statusBar.showMessage(f"行: {line} 列: {column}")
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
